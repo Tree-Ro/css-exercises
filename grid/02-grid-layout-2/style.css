@@ -3,25 +3,19 @@ body, html {
   margin: 0;
 }
 
-.container {
-  text-align: center;
-  height: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-}
 
-.container div {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
-  border-radius: 15px;
+
+/*  Exercise changes */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  gap: 15px;
 }
 
 .header {
   background-color: #FFDE22;
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
 }
 
 .sidebar {
@@ -35,16 +29,34 @@ body, html {
 
 .article {
   background-color: #bccbde;
+  grid-column: 2 / 3;
 }
 
+.footer {
+  background-color: #393f4d;
+  grid-column: 1 / -1;
+}
+
+
+
+/* Styling */
+.container {
+  text-align: center;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
 .article p {
   font-size: 18px;
   font-family: sans-serif;
   color: white;
   text-align: left;
 }
-
-.footer {
-  background-color: #393f4d;
-  grid-column: 1 / 3;
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
 }
