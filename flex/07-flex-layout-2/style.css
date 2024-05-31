@@ -61,6 +61,7 @@ a {
 .sidebar {
   width: 300px;
   background: royalblue;
+<<<<<<< HEAD
   flex-shrink: 0;
   padding: 1px;
 }
@@ -68,6 +69,9 @@ a {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+=======
+  box-sizing: border-box;
+>>>>>>> uppstream/main
 }
 
 .card {

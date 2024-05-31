@@ -34,8 +34,11 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+<<<<<<< HEAD
   margin-bottom: 16px;
   align-self: center;
+=======
+>>>>>>> uppstream/main
 }
 
 .header,
